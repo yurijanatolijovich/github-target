@@ -301,7 +301,7 @@ letter-spacing: 0.02em;
     transform: translate(-50%,-50%);
     min-height: 581px;
     min-width: 528px;
-    padding: 15px;
+   
     background-color: #ffffff; 
 }   
 .close {
@@ -331,7 +331,7 @@ letter-spacing: 0.02em;
     background-color: yellow;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
+    padding: 40px;
 }
 .form_title{
     font-size: 20px;
@@ -340,10 +340,50 @@ letter-spacing: 0.02em;
     font-weight: bold;
     letter-spacing: 0.03em;
     color: #212121;
+    margin-bottom: 10px;
 }
 .form_field{
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
+}
+.form_field label{
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+.form_field input{
+    height: 40px;
+    margin-bottom: 10px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 1px 1px rgba(0,0,0,0.14),
+                0px 2px 1px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    border: 1px solid rgba(33,33,33,0.2);
+}
+.form_check{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.form_field textarea{
+    padding: 12px 16px;
+    height: 96px;
+    margin-bottom: 10px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 1px 1px rgba(0,0,0,0.14),
+                0px 2px 1px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    border: 1px solid rgba(33,33,33,0.2);
+}
+.form_field textarea::placeholder{
+   
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0/01em;
+    color: rgba(117,117,117,0.5);
 }
 .work-tesis {      
     padding-top: 94px;     

@@ -412,28 +412,31 @@
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <form class="form">
-                    <b class="form_title">оставьте свои данные, мы вам перезвоним</b>
+                    <b class="form_title">Оставьте свои данные, мы вам перезвоним</b>
                 <div class="form_field">
-                    <label for="name">имя</label>
+                    <label for="name">Имя</label>
                     <input type="text" name="name" id="name"/>
-                    <label for="tel">телефон</label>
+                    <label for="tel">Телефон</label>
                     <input type="tel" name="tel" id="tel"/>
-                    <label for="mail">почта</label>
+                    <label for="mail">Почта</label>
                     <input type="email" name="mail" id="mail"/>
-                    <label for="comment">комментарии</label>
-                    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                    <label for="comment">Комментарии</label>
+                    <textarea name="comment" id="comment" cols="" rows=""
+                              placeholder="Введите текст"></textarea>
                 </div>
-                <ul>
+                <ul class="form_check">
                     <li>
                     <input type="checkbox" name="html" value="html" id="html"/>
                     </li>
                     <li>
                     <label for="html">Соглашаюсь с рассылкой и приниммаю</label>
                     </li>
-                </ul>
+                    <li>
                 <a href=""><span> Условия договора</span></a>
-                </form><p>
-                </p>
+                    </li>
+                </ul>
+                <button class="" >отправить</button>
+                </form>
                 <button class="close" data-modal-close>
                     <svg class="close_icon">
                         <use href="./images/icons.svg#modalclose">
