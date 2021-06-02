@@ -52,7 +52,7 @@ ul{
     --team-speciality: ;      
 }      
 body{      
-    width: fit-content;      
+    width: ;      
     margin: 0;      
     padding: 0;
     padding-top: 80px;
@@ -325,26 +325,7 @@ letter-spacing: 0.02em;
     width: 18px;
     height: 18px;
     fill: ;
-}
-.form{
-    width: 100%;
-    background-color: yellow;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-}
-.form_title{
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 0.03em;
-    color: #212121;
-}
-.form_field{
-    display: flex;
-    flex-direction: column;
-}
+}  
 .work-tesis {      
     padding-top: 94px;     
     padding-bottom: 94px;     
