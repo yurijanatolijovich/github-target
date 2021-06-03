@@ -333,7 +333,7 @@ letter-spacing: 0.02em;
     margin-right: auto;
     padding: 40px;
 }
-.form_title{
+.form__title{
     font-size: 20px;
     line-height: 1.15;
     text-align: center;
@@ -342,33 +342,40 @@ letter-spacing: 0.02em;
     color: #212121;
     margin-bottom: 10px;
 }
-.form_field{
+.form__field{
+    position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    transition: color 250ms cubic-bezier(0.4,0,0.2,1);
 }
-.form_field label{
+.form__field__label{
     margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: #757575;
 }
-.form_field input{
+.form__field__input{
     height: 40px;
-    margin-bottom: 10px;
+    margin: 0;
+    padding: 0;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
                 0px 1px 1px rgba(0,0,0,0.14),
                 0px 2px 1px rgba(0,0,0,0.2);
     border-radius: 4px;
     border: 1px solid rgba(33,33,33,0.2);
 }
-.form_check{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
+.form__field__icon{
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    left: 15px;
+    width: 18px;
+    height: 18px;
+
 }
-.form_field textarea{
+.form__field__textarea{
     padding: 12px 16px;
     height: 96px;
     margin-bottom: 10px;
@@ -378,12 +385,43 @@ letter-spacing: 0.02em;
     border-radius: 4px;
     border: 1px solid rgba(33,33,33,0.2);
 }
-.form_field textarea::placeholder{
+.form__field__textarea::placeholder{
    
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0/01em;
     color: rgba(117,117,117,0.5);
+}
+.form__check{
+    display: flex;
+    flex-direction: row;
+    align-items:  center;
+    margin-bottom: 30px;
+}
+/* .visually-hidden{ 
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+} */
+.form__check__label{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03;
+    color: #757575;
+    margin-right: 5px;
+}
+.form__check__policy{
+    margin-left: 5px;
+    color: var(--accent-color);
+}
+.form__button{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 .work-tesis {      
     padding-top: 94px;     

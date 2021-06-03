@@ -412,30 +412,39 @@
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <form class="form">
-                    <b class="form_title">Оставьте свои данные, мы вам перезвоним</b>
-                <div class="form_field">
-                    <label for="name">Имя</label>
-                    <input type="text" name="name" id="name"/>
-                    <label for="tel">Телефон</label>
-                    <input type="tel" name="tel" id="tel"/>
-                    <label for="mail">Почта</label>
-                    <input type="email" name="mail" id="mail"/>
-                    <label for="comment">Комментарии</label>
-                    <textarea name="comment" id="comment" cols="" rows=""
+                    <b class="form__title">Оставьте свои данные, мы вам перезвоним</b>
+                <div class="form__field">
+                    <label class="form__field__label" for="name">Имя</label>
+                    <input class="form__field__input" type="text" name="name" id="name"/>
+                    <svg class="form__field__icon">
+                        <use href="./images/icons.svg#clientname"></use>
+                    </svg>
+                </div>
+                <div class="form__field">
+                    <label class="form__field__label" for="tel">Телефон</label>
+                    <input class="form__field__input" type="tel" name="tel" id="tel"/>
+                    <svg class="form__field__icon">
+                        <use href="./images/icons.svg#telephone"></use>
+                    </svg>
+                </div>
+                <div class="form__field">
+                    <label class="form__field__label" for="mail">Почта</label>
+                    <input class="form__field__input" type="email" name="mail" id="mail"/>
+                    <svg class="form__field__icon">
+                        <use href="./images/icons.svg#email"></use>
+                    </svg>
+                </div>
+                <div class="form__field">    
+                    <label  class="form__field__label" for="comment">Комментарии</label>
+                    <textarea class="form__field__textarea" name="comment" id="comment" cols="" rows=""
                               placeholder="Введите текст"></textarea>
                 </div>
-                <ul class="form_check">
-                    <li>
-                    <input type="checkbox" name="html" value="html" id="html"/>
-                    </li>
-                    <li>
-                    <label for="html">Соглашаюсь с рассылкой и приниммаю</label>
-                    </li>
-                    <li>
-                <a href=""><span> Условия договора</span></a>
-                    </li>
-                </ul>
-                <button class="" >отправить</button>
+                <div class="form__field form__check">
+                    <input class="form__check__input visually-hidden" type="checkbox" name="accept" value="accept" id="accept"/>
+                    <label class="form__check__label" for="accept">Соглашаюсь с рассылкой и приниммаю</label>
+                    <a href="" class="form__check__policy"><span> Условия договора</span></a>
+                </div>
+                <button class="cervis form__button" >Oтправить</button>
                 </form>
                 <button class="close" data-modal-close>
                     <svg class="close_icon">
