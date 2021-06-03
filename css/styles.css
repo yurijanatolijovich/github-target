@@ -273,7 +273,8 @@ letter-spacing: 0.02em;
     border-radius: 4px; 
     border: transparent;      
     padding: 10px 32px; 
-    margin-top: 30px;      
+    margin-top: 30px;
+    cursor: pointer;      
 }      
 .cervis:hover,      
 .cervis:focus{      
@@ -328,14 +329,16 @@ letter-spacing: 0.02em;
 }
 .form{
     width: 100%;
-    background-color: yellow;
+   
     margin-left: auto;
     margin-right: auto;
     padding: 40px;
 }
 .form__title{
+    display: flex;
     font-size: 20px;
     line-height: 1.15;
+    justify-content: center;
     text-align: center;
     font-weight: bold;
     letter-spacing: 0.03em;
@@ -355,6 +358,8 @@ letter-spacing: 0.02em;
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: #757575;
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4,0,0.2,1);
 }
 .form__field__input{
     height: 40px;
@@ -365,6 +370,18 @@ letter-spacing: 0.02em;
                 0px 2px 1px rgba(0,0,0,0.2);
     border-radius: 4px;
     border: 1px solid rgba(33,33,33,0.2);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__field__input:hover,
+.form__field__input:focus{
+    cursor: pointer;
+}
+.form__field__input:focus{
+    outline-color: var(--accent-color);
+}
+.form__field__input:focus + .form__field__label{
+    color: var(--accent-color);
 }
 .form__field__icon{
     position: absolute;
@@ -373,7 +390,12 @@ letter-spacing: 0.02em;
     left: 15px;
     width: 18px;
     height: 18px;
-
+    color: var(--title-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__field__input:focus ~ .form__field__icon{
+    color: var(--accent-color);
+    fill: currentColor;
 }
 .form__field__textarea{
     padding: 12px 16px;
@@ -384,6 +406,7 @@ letter-spacing: 0.02em;
                 0px 2px 1px rgba(0,0,0,0.2);
     border-radius: 4px;
     border: 1px solid rgba(33,33,33,0.2);
+    transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__field__textarea::placeholder{
    
@@ -392,13 +415,22 @@ letter-spacing: 0.02em;
     letter-spacing: 0/01em;
     color: rgba(117,117,117,0.5);
 }
+.form__field__textarea:focus,
+.form__field__textarea:hover{
+    outline-color: var(--accent-color);
+    outline-width: 1px;
+    cursor: pointer;
+}
+.form__field__textarea:focus + .form__field__label{
+    color: var(--accent-color);
+}
 .form__check{
     display: flex;
     flex-direction: row;
     align-items:  center;
     margin-bottom: 30px;
 }
-/* .visually-hidden{ 
+ .visually-hidden{ 
     position: absolute !important;
     clip: rect(1px, 1px, 1px, 1px);
     padding: 0 !important;
@@ -406,13 +438,36 @@ letter-spacing: 0.02em;
     height: 1px !important;
     width: 1px !important;
     overflow: hidden;
-} */
+} 
 .form__check__label{
+    display: flex;
+    align-items: center;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03;
     color: #757575;
-    margin-right: 5px;
+    margin-left: 14px;
+}
+.form__check__label::before{
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+    border: 1px solid var(--hero-phon);
+    border-radius: 2px;
+    box-shadow: 0px, 4px, 4px, rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.form__check__input:checked + .form__check__label::before{
+    background-image: url(../images/icon-check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: var(--accent-color);
+    background-origin: border-box;
+    border-color: transparent;
+    border-radius: 2 px;
 }
 .form__check__policy{
     margin-left: 5px;
