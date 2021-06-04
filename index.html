@@ -364,9 +364,9 @@
                     </ul>     
                 </address>     
             </div>     
-        <div  class="net-list">      
-            <p >Присоединяйтесь</p>      
-            <ul class="flex net-up-down-footer">     
+            <div  class="net-list">      
+                <p >Присоединяйтесь</p>      
+                <ul class="flex net-up-down-footer">     
                         <li>     
                     <a class="net">  
                         <svg class="net-icon">  
@@ -404,9 +404,28 @@
                     </a>     
                   
                         </li>      
-                    </ul>      
-        </div>      
-    </div>                  
+                </ul>      
+            </div>
+            <div class="subscription">
+                <p class="invitation">подпишитесь на рассылку</p>
+                <form class="subscription-form" name="subscription-form" autocomplete="on" novalidate >
+                    <div class="subscription__field">
+                        <label class="subscription__field__label" for="subscriptor"></label>
+                        <input class="subscription__field__input" type="email" name="subscriptor"
+                         id="subscriptor" placeholder="E-mail"/>
+                        
+                    </div>
+                    <button type="submit" class="subscription__button">
+                        подписаться
+                        <svg class="subscripton__icon">  
+                            <use href="./images/icons.svg#icon-send">  
+                            </use>  
+                        </svg>
+                    </button> 
+
+                </form>
+            </div>      
+        </div>                  
     </footer>
           
         <div class="backdrop is-hidden" data-modal>
