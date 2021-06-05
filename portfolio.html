@@ -7,7 +7,7 @@
     <title>WebStudio-Portfolio</title>   
     <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" rel="stylesheet" />   
      <link href="https://fonts.googleapis.com/css?family=Raleway:wght@700&Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />    
-     <link rel="stylesheet" href="./css/styles.css" />   
+     <link rel="stylesheet" href="./css/main.min.css" />   
 </head>   
 <body>    
        
@@ -268,7 +268,26 @@
                   
                         </li>      
                     </ul>      
-        </div>      
+        </div>
+        <div class="subscription">
+            <p class="invitation">подпишитесь на рассылку</p>
+            <form class="subscription-form" name="subscription-form" autocomplete="on" novalidate >
+                <div class="subscription__field">
+                    <label class="subscription__field__label" for="subscriptor"></label>
+                    <input class="subscription__field__input" type="email" name="subscriptor"
+                     id="subscriptor" placeholder="E-mail"/>
+                    
+                </div>
+                <button type="submit" class="subscription__button">
+                    подписаться
+                    <svg class="subscripton__icon">  
+                        <use href="./images/icons.svg#icon-send">  
+                        </use>  
+                    </svg>
+                </button> 
+
+            </form>
+        </div>        
     </div>                  
     </footer> 
         
