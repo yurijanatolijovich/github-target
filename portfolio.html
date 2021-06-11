@@ -16,12 +16,12 @@
         <nav class="site-nav flex">      
             <a href="./index.html" class="flex logo"><span>      
                 Web</span>      
-                <span class="studio-black">Studio</span>      
+                <span class="logo--studio-black">Studio</span>      
             </a>      
             <ul class=" flex nav">      
-                <li class="item"><a href="./index.html" class="link" >Студия</a></li>      
-                <li class="item"><a href="./portfolio.html" class="current">Портфолио</a></li>      
-                <li class="item"><a href="" class="link">Контакты</a></li>      
+                <li class="nav__item"><a href="./index.html" class="link" >Студия</a></li>      
+                <li class="nav__item"><a href="./portfolio.html" class="current">Портфолио</a></li>      
+                <li class="nav__item"><a href="" class="link">Контакты</a></li>      
             </ul>      
         </nav>      
         <ul class=" contacts flex">      
@@ -35,7 +35,7 @@
             <li class="item"> 
                 <a href="tel:+380961111111" class="link"> 
                     <svg class="net-tel"> 
-                        <use href="./images/icons.svg#tel"> 
+                        <use href="./images/icons.svg#Vector"> 
                         </use> 
                     </svg> 
                     +38 096 111 11 11</a></li>      
@@ -228,8 +228,8 @@
                 </address>     
             </div>     
         <div  class="net-list">      
-            <p >Присоединяйтесь</p>      
-            <ul class="flex net-up-down-footer">     
+                <p >Присоединяйтесь</p>      
+                <ul class="flex net-up-down-footer">     
                         <li>     
                     <a class="net">  
                         <svg class="net-icon">  
@@ -267,28 +267,29 @@
                     </a>     
                   
                         </li>      
-                    </ul>      
-        </div>
-        <div class="subscription">
-            <p class="invitation">подпишитесь на рассылку</p>
-            <form class="subscription-form" name="subscription-form" autocomplete="on" novalidate >
-                <div class="subscription__field">
-                    <label class="subscription__field__label" for="subscriptor"></label>
-                    <input class="subscription__field__input" type="email" name="subscriptor"
-                     id="subscriptor" placeholder="E-mail"/>
-                    
+                </ul>
                 </div>
-                <button type="submit" class="subscription__button">
-                    подписаться
-                    <svg class="subscripton__icon">  
-                        <use href="./images/icons.svg#icon-send">  
-                        </use>  
-                    </svg>
-                </button> 
-
-            </form>
-        </div>        
-    </div>                  
+                <div class="subscription"> 
+                        <p class="invitation">подпишитесь на рассылку</p> 
+                        <form class="subscription-form" name="subscription-form" autocomplete="on" novalidate > 
+                            <div class="subscription__field"> 
+                                <label class="subscription__label" for="subscriptor"></label> 
+                                <input class="subscription__input" type="email" name="subscriptor" 
+                                 id="subscriptor" placeholder="E-mail"/> 
+                                 
+                            </div> 
+                            <button type="submit" class="subscription__button"> 
+                                подписаться 
+                                <svg class="subscripton__icon">   
+                                    <use href="./images/icons.svg#icon-send">   
+                                    </use>   
+                                </svg> 
+                            </button>  
+         
+                        </form> 
+                </div>      
+ 
+        </div>                  
     </footer> 
         
 </body>

@@ -1,0 +1,66 @@
+.ground-floor{    
+    background-color: $footer-phon-color; 
+}
+.low-nav {    
+    padding-top: 60px;      
+    padding-bottom: 60px;    
+}       
+.low-nav .logo{      
+    padding-bottom: 20px;      
+}       
+.low-nav .link{       
+    color: $low-accent-color;    
+           
+}       
+.low-nav .link:hover,       
+.low-nav .link:focus{       
+    color: $accent-color;       
+}     
+.address-list {    
+    font-style: normal;    
+}    
+.address-list .item:not(:last-child){    
+    margin-bottom: 9px;    
+}        
+     
+.net-list {   
+    color: $main-phon-color;   
+    font-size: 14px;      
+    line-height: 1.14;      
+    font-weight: bold;      
+    letter-spacing: 0.03em;      
+    text-transform: uppercase;      
+    margin-left: 70px;   
+    padding-top: 60px   
+}     
+.net-list .flex{   
+    padding-top:20px;    
+}
+.net-up-down-footer{  
+    padding-top: 16px;  
+padding-bottom: 30px;  
+align-items: center;  
+          
+}      
+.net{  
+    display: flex;  
+    content: "";  
+    width: 44px;  
+    height: 44px;  
+    color: $border-client-card;  
+    background-color: $social-badge-color;  
+    border-radius: 50%;  
+    justify-content: center;  
+    align-items: center;  
+    margin-right: 10px;  
+}  
+.net:hover,  
+.net:focus{  
+    color: $main-phon-color;  
+    background-color: $accent-color;  
+}  
+.net .net-icon{  
+    fill: currentColor;  
+    width: 20px;  
+    height: 20px;
+}  

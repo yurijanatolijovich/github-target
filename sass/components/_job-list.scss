@@ -1,0 +1,37 @@
+.job-list{       
+    padding-bottom: 94px;      
+}           
+.boxes{       
+    margin-top: 50px;
+}        
+.job-list .item:not(:last-child){ 
+    margin-right: 30px; 
+}       
+.job-card{ 
+    display: block; 
+    position: relative;
+    transform: translate(0,0);
+    width: 100%; 
+    height:100%;
+    opacity: 1;
+} 
+.jobs{ 
+    position: absolute; 
+    display: flex;
+    transform: translate(0,0); 
+    bottom: 0;
+    width: 100%; 
+    height:25%; 
+    justify-content: center; 
+    align-items: center;
+    background-color: rgba(47,48,58,0.8);
+} 
+.job-name{ 
+    display: flex;
+    color: $main-phon-color; 
+    font-weight: 400; 
+    font-size: 18px; 
+    line-height: 1.56; 
+    letter-spacing: 0.03; 
+    opacity: 1;
+} 

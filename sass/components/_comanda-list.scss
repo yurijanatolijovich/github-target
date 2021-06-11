@@ -1,0 +1,58 @@
+.comanda-list .link{       
+    color: $comanda-list-color;       
+    background-color: $main-phon-color;       
+    font-size: 16px;       
+    line-height: 1.19;
+    letter-spacing: 0.03em;; 
+}   
+.comanda-list .link{   
+    text-align: center;   
+}   
+.comanda-list{      
+    padding-top: 94px;      
+    padding-bottom: 94px;     
+    background-color: $low-accent-color;      
+}      
+.team{      
+    margin-top: 50px;      
+}      
+.team .item{      
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 1px rgba(0,0,0,0.14), 0 2px 1px rgba(0,0,0,0.2);      
+    border-radius: 0 0 4px 4px;      
+}      
+      
+.comanda-list .item:not(:last-child){      
+     margin-right: 30px;        
+}      
+.name-up-down{      
+    padding-top: 30px;      
+    padding-bottom: 10px;      
+}      
+.net-up-down{            
+    padding-left: 32px;      
+    padding-top: 16px;  
+    padding-bottom: 30px;  
+    align-items: center;            
+}
+.net{
+    display: flex;  
+    content: "";  
+    width: 44px;  
+    height: 44px;  
+    color: $border-client-card;  
+    background-color: $social-badge-color;  
+    border-radius: 50%;  
+    justify-content: center;  
+    align-items: center;  
+    margin-right: 10px;  
+}  
+.net:hover,  
+.net:focus{  
+    color: $social-badge-color;  
+    background-color: $accent-color;  
+}  
+.net .net-icon{  
+    fill: currentColor;  
+    width: 20px;  
+    height: 20px;
+}  

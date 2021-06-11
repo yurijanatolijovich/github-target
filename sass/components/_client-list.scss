@@ -1,0 +1,65 @@
+.client-list{      
+    padding-bottom: 94px;      
+    padding-top: 94px;      
+      
+}      
+      
+.client{      
+    margin-top: 50px;     
+    box-sizing: border-box;   
+}      
+.client-list .logotype{       
+    width: 170px;
+    height: 90px;
+    outline: 1px solid $border-client-card;
+    color: $border-client-card; 
+    box-sizing: border-box;       
+    border-radius: 4px;       
+    margin-right: 30px;      
+    list-style: none;       
+    display: flex;       
+    content:"";
+    justify-content: center; 
+    align-items: center; 
+    background-repeat: no-repeat;       
+    background-position: center;       
+         
+}      
+.logotype:last-child{    
+margin-right: 0;      
+} 
+.logotype:hover,
+.logotype:focus{ 
+    outline: 1px solid $accent-color; 
+    color: $accent-color; 
+} 
+.logo1{ 
+    fill: $border-client-card; 
+    width: 45px; 
+    height: 50px; 
+} 
+.logo2{ 
+    fill: currentColor; 
+    width: 40px; 
+    height: 52px; 
+} 
+.logo3{       
+    fill: currentColor; 
+    width: 41px; 
+    height: 43px; 
+} 
+.logo4{       
+    fill: currentColor; 
+    width: 80px; 
+    height: 43px 
+} 
+.logo5{ 
+    fill: currentColor; 
+    width: 59px; 
+    height: 47px; 
+}       
+.logo6{       
+    fill: currentColor; 
+    width: 89px; 
+    height: 46px; 
+}

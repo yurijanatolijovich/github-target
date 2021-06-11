@@ -1,0 +1,23 @@
+.cervis{       
+    display: inline-block;       
+    font-weight: bold;       
+    font-size: 16px;       
+    line-height: 1.87;       
+    background-color: $accent-color;       
+    color: $button-title-color;      
+    align-items: center;       
+    text-align: center;       
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);       
+    letter-spacing: 0.06em;       
+         
+    border-radius: 4px;  
+    border: transparent;       
+    padding: 10px 32px;  
+    margin-top: 30px; 
+    cursor: pointer;       
+}       
+.cervis:hover,       
+.cervis:focus{       
+    background-color: $button-title-color;       
+    color: $accent-color;       
+} 

@@ -1,0 +1,52 @@
+.work-tesis {       
+    padding-top: 94px;      
+    padding-bottom: 94px;      
+}       
+.work-tesis .item::before{       
+    display: block;       
+    content: "";       
+    min-width: 270px;       
+    height:120px;       
+          
+    background-size: contain;    
+   
+           
+    background-repeat: no-repeat;       
+    background-position: center;      
+    margin-bottom: 30px;      
+    margin-top: 0;
+padding: 0;      
+           
+}       
+.item.icon-locator::before{       
+    background-image: url(../images/Group1.svg);       
+}       
+.item.time::before{       
+    background-image: url(../images/Group2.svg);       
+}       
+       
+.item.grafic::before{       
+    background-image: url(../images/Group3.svg);       
+}       
+.item.future::before{       
+    background-image: url(../images/Group4.svg);       
+}       
+       
+.work-tesis .item:not(:last-child){       
+           
+    margin-right: 30px;       
+          
+          
+}       
+.tesis{       
+    color: $comanda-list-color;       
+    width: 270px;       
+    height: 75px;       
+    font-family: "Roboto";       
+    font-style: normal;       
+    font-weight: normal;       
+    font-size: 14px;       
+    line-height: 1.71;       
+    letter-spacing: 0.02em;      
+    margin-top: 10px;      
+} 
