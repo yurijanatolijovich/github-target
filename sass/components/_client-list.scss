@@ -31,7 +31,8 @@ margin-right: 0;
 .logotype:hover,
 .logotype:focus{ 
     outline: 1px solid $accent-color; 
-    color: $accent-color; 
+    color: $accent-color;
+    cursor: pointer; 
 } 
 .logo1{ 
     fill: $border-client-card; 

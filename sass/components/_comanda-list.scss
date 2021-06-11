@@ -49,7 +49,8 @@
 .net:hover,  
 .net:focus{  
     color: $social-badge-color;  
-    background-color: $accent-color;  
+    background-color: $accent-color;
+    cursor: pointer;  
 }  
 .net .net-icon{  
     fill: currentColor;  

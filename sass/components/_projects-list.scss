@@ -60,9 +60,11 @@ cursor: pointer;
     
 } 
  
-.projects-name:hover .submenu{
+.projects-name:hover .submenu,
+.projects-name:focus .submenu{
     opacity: 1; 
-    transform: translateY(0); 
+    transform: translateY(0);
+    cursor: pointer; 
      
 } 
 .submenu{ 
@@ -73,7 +75,7 @@ cursor: pointer;
     width: 100%; 
     list-style: none; 
     background-color:rgba(33,150,243,0.9);
-display: flex; 
+    display: flex; 
     justify-content: center; 
     align-items: center; 
     text-align: left; 

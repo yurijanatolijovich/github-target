@@ -14,7 +14,8 @@
 }       
 .low-nav .link:hover,       
 .low-nav .link:focus{       
-    color: $accent-color;       
+    color: $accent-color;
+    cursor: pointer;       
 }     
 .address-list {    
     font-style: normal;    
