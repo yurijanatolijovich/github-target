@@ -1,3 +1,4 @@
+
 .contacts{       
     display: flex;      
     margin-left: auto;    
@@ -8,30 +9,29 @@
     font-weight: 500; 
     font-size: 14px; 
     line-height: 16px; 
-    letter-spacing: 0.02em; 
-}       
-.contacts .item:first-child{      
-    margin-right: 30px; 
-}    
-.contacts .net-email{  
-    fill: currentColor;  
-    width: 16px;  
-    height: 12px;  
-    margin-right: 10px;  
-}            
-.contacts .net-tel{  
-    fill: currentColor;  
-    width: 10px;  
-    height: 16px;
-    margin-right: 10px; 
-    justify-content: center; 
-    align-items: center; 
+    letter-spacing: 0.02em;      
+    & .item:first-child{      
+        margin-right: 30px; 
+    }    
+    & .net-email{  
+        fill: currentColor;  
+        width: 16px;  
+        height: 12px;  
+        margin-right: 10px;  
+    }            
+    & .net-tel{  
+        fill: currentColor;  
+        width: 10px;  
+        height: 16px;
+        margin-right: 10px; 
+        justify-content: center; 
+        align-items: center; 
+    }
+    & .link{       
+        color: $accent-focus-color;
+        &:hover, 
+        &:focus{       
+            color: $accent-color;  
+        }       
+    }          
 }
-.contacts .link{       
-    color: $accent-focus-color;       
-}
-.contacts .link:hover, 
-.contacts .link:focus{       
-    color: $accent-color;  
-}
-      

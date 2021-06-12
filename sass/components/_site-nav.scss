@@ -6,38 +6,33 @@
     align-items: center;    
     letter-spacing: 0.02em;
 }       
-       
 .nav{
-   
     margin-left: 93px;      
-  
-}    
-.nav__item{ 
- 
+    &__item{ 
     margin-right: 30px;    
+    }
+    .link {       
+        color: $accent-focus-color;
+        &:hover,       
+        &:focus{       
+        color: $accent-color;  
+        }       
+    }
+    .current{       
+        color: $accent-color; 
+        content: ""; 
+        display: block; 
+        position: relative; 
+        &::after{ 
+            position: absolute; 
+            display: flex; 
+            content: ""; 
+            bottom: -32px; 
+            left: 0; 
+            height: 4px; 
+            width: 100%; 
+            border: 2px solid $accent-color; 
+            border-radius: 2px; 
+        }
+    }
 }
-.site-nav .link {       
-    color: $accent-focus-color;       
-}
-.site-nav .link:hover,       
-.site-nav .link:focus{       
-    color: $accent-color;  
-}
-.site-nav .current{       
-    color: $accent-color; 
-    content: ""; 
-    display: block; 
-    position: relative; 
-   
-} 
-.site-nav .current::after{ 
-    position: absolute; 
-    display: flex; 
-    content: ""; 
-    bottom: -32px; 
-    left: 0; 
-    height: 4px; 
-    width: 100%; 
-    border: 2px solid $accent-color; 
-    border-radius: 2px; 
-}  
