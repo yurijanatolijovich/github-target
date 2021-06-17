@@ -1,12 +1,14 @@
 .site-nav{       
-         
+   
     display: flex;
     font-size: 14px;       
     line-height: 1.14;       
     align-items: center;    
     letter-spacing: 0.02em;
+    
 }       
 .nav{
+   
     margin-left: 93px;      
     &__item{ 
     margin-right: 30px;    
