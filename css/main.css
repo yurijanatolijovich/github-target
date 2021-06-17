@@ -297,12 +297,12 @@ body {
   padding-bottom: 94px;
 }
 
-.boxes {
-  margin-top: 50px;
-}
-
 .job-list .item:not(:last-child) {
   margin-right: 30px;
+}
+
+.boxes {
+  margin-top: 50px;
 }
 
 .job-card {
@@ -444,7 +444,7 @@ body {
 }
 
 .logo1 {
-  fill: #afb1b8;
+  fill: currentColor;
   width: 45px;
   height: 50px;
 }

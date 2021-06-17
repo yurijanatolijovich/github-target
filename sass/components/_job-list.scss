@@ -1,12 +1,13 @@
 .job-list{       
     padding-bottom: 94px;      
+    & .item:not(:last-child){ 
+        margin-right: 30px; 
+    }
 }           
 .boxes{       
     margin-top: 50px;
 }        
-.job-list .item:not(:last-child){ 
-    margin-right: 30px; 
-}       
+      
 .job-card{ 
     display: block; 
     position: relative;
