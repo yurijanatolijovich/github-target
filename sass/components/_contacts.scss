@@ -35,3 +35,12 @@
         }       
     }          
 }
+@media screen and (min-width: 768px) and (max-width: 1199px)
+.contacts {
+    flex-direction: column;
+    align-items: flex-start;
+}
+@media screen and (max-width: 767px)
+.contacts {
+    display: none;
+}
